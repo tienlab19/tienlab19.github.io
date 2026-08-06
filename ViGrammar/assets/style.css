@@ -158,6 +158,8 @@ h3 { margin: 0 0 8px; font-size: 18px; }
 .document p, .document li { color: #44516a; }
 .document .updated { margin: 12px 0 36px; color: var(--muted); }
 .notice { padding: 18px; border-left: 4px solid var(--brand); border-radius: 8px; background: #f4f2ff; }
+.notice h2 { margin: 0 0 10px; font-size: 20px; }
+.notice p { margin: 8px 0 0; }
 .faq { padding: 24px 0; border-bottom: 1px solid var(--line); }
 .faq:last-child { border-bottom: 0; }
 
