@@ -211,14 +211,14 @@ h3 { margin: 0 0 8px; font-size: 17.5px; font-weight: 750; letter-spacing: -.01e
 .phone {
   position: relative;
   z-index: 1;
-  width: min(256px, 66vw);
-  border-radius: 32px;
-  padding: 7px;
+  width: min(208px, 58vw);
+  border-radius: 30px;
+  padding: 6px;
   background: linear-gradient(150deg, #20342e, #16241f);
   box-shadow: var(--shadow-lg);
   transform: rotate(-2deg);
 }
-.phone img { display: block; width: 100%; border-radius: 26px; }
+.phone img { display: block; width: 100%; height: auto; border-radius: 26px; }
 .hero-badge {
   position: absolute;
   z-index: 2;
@@ -296,11 +296,11 @@ h3 { margin: 0 0 8px; font-size: 17.5px; font-weight: 750; letter-spacing: -.01e
 .screens {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  max-width: 880px;
+  gap: 20px;
+  max-width: 680px;
   margin: 0 auto;
 }
-.screen { max-width: 200px; width: 100%; margin: 0 auto; }
+.screen { max-width: 150px; width: 100%; margin: 0 auto; }
 .screen figure { margin: 0; }
 .screen .frame {
   border-radius: 22px;
@@ -308,7 +308,7 @@ h3 { margin: 0 0 8px; font-size: 17.5px; font-weight: 750; letter-spacing: -.01e
   background: linear-gradient(150deg, #20342e, #16241f);
   box-shadow: var(--shadow-md);
 }
-.screen .frame img { display: block; width: 100%; border-radius: 16px; }
+.screen .frame img { display: block; width: 100%; height: auto; border-radius: 16px; }
 .screen figcaption { margin-top: 12px; text-align: center; }
 .screen figcaption b { display: block; font-size: 14.5px; }
 .screen figcaption span { color: var(--muted); font-size: 12.5px; }
