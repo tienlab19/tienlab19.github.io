@@ -3,42 +3,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ViGrammar — học ngữ pháp tiếng Anh, luyện bài tập và đọc nội dung song ngữ.">
-  <meta name="theme-color" content="#5147d9">
-  <title>ViGrammar — Học ngữ pháp tiếng Anh</title>
+  <meta name="description" content="ViGrammar — sổ tay ngữ pháp tiếng Anh: tra nhanh hơn 130 chủ điểm A1–B2, trắc nghiệm có giải thích và sổ lỗi sai. Hoạt động ngoại tuyến.">
+  <meta name="theme-color" content="#2f6f61">
+  <meta property="og:title" content="ViGrammar — Sổ tay ngữ pháp tiếng Anh">
+  <meta property="og:description" content="Tra nhanh. Ghi nhớ. Dùng đúng ngữ pháp. Hơn 130 chủ điểm A1–B2, trắc nghiệm có giải thích, sổ lỗi sai — hoạt động ngoại tuyến.">
+  <meta property="og:type" content="website">
+  <title>ViGrammar — Sổ tay ngữ pháp tiếng Anh</title>
   <link rel="icon" href="assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Điều hướng chính">
       <a class="brand" href="./"><img src="assets/app-icon.png" alt=""><span>ViGrammar</span></a>
-      <div class="nav-links"><a href="support.html">Hỗ trợ</a><a href="privacy.html">Quyền riêng tư</a></div>
+      <div class="nav-links">
+        <a href="#tinh-nang">Tính năng</a>
+        <a href="#man-hinh">Màn hình</a>
+        <a href="support.html">Hỗ trợ</a>
+        <a class="cta" href="privacy.html">Quyền riêng tư</a>
+      </div>
     </nav>
   </header>
+
   <main>
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-inner">
+      <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Học chắc từng nền tảng</p>
-          <h1>Ngữ pháp tiếng Anh, dễ hiểu hơn mỗi ngày.</h1>
-          <p class="lead">ViGrammar kết hợp bài học có hệ thống, bài tập có giải thích và kho đọc song ngữ để bạn học liền mạch — kể cả khi ngoại tuyến.</p>
-          <div class="actions"><a class="button" href="support.html">Trung tâm hỗ trợ</a><a class="button secondary" href="privacy.html">Chính sách quyền riêng tư</a></div>
+          <p class="eyebrow">Sổ tay ngữ pháp bỏ túi</p>
+          <h1>Tra nhanh. Ghi nhớ.<br><em>Dùng đúng</em> ngữ pháp.</h1>
+          <p class="lead">ViGrammar là sổ tay ngữ pháp tiếng Anh cô đọng: mở nhanh công thức, xem ví dụ, đánh dấu trang cần nhớ và ôn lại lỗi sai — ngay cả khi ngoại tuyến.</p>
+          <div class="actions">
+            <a class="button" href="#tinh-nang">
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              Khám phá tính năng
+            </a>
+            <a class="button secondary" href="support.html">Trung tâm hỗ trợ</a>
+          </div>
+          <div class="trust-row">
+            <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Không quảng cáo</span>
+            <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Không cần tài khoản</span>
+            <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Hoạt động ngoại tuyến</span>
+          </div>
         </div>
-        <img class="hero-icon" src="assets/app-icon.png" alt="Biểu tượng ứng dụng ViGrammar" width="310" height="310">
+        <div class="hero-art">
+          <div class="phone">
+            <img src="assets/screens/so-tay.webp" alt="Màn hình trang chủ ViGrammar với ô tìm kiếm và chủ điểm vừa xem" width="620" height="1341" loading="eager">
+          </div>
+          <div class="hero-badge">
+            <span class="dot"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            <div><b>130+ chủ điểm</b><small>Ngữ pháp A1 – B2</small></div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Features -->
+    <section class="section" id="tinh-nang">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Mọi thứ trong một sổ tay</p>
+          <h2>Tra cứu, luyện tập và ghi nhớ — gọn trong túi bạn.</h2>
+          <p class="section-intro">Nội dung được sắp xếp rõ ràng theo nhóm ngữ pháp và cấp độ, kèm phần luyện tập bám sát điều bạn vừa tra.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="chip"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+            <h3>Tra cứu tức thì</h3>
+            <p>Tìm theo tên thì, cấu trúc hoặc lỗi thường gặp và mở đúng trang chỉ trong vài giây.</p>
+          </article>
+          <article class="card">
+            <span class="chip"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <h3>Hơn 130 chủ điểm</h3>
+            <p>Mục lục ngữ pháp cô đọng theo cấp độ CEFR A1–B2, kèm công thức, cách dùng và ví dụ dễ nhớ.</p>
+          </article>
+          <article class="card">
+            <span class="chip"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+            <h3>Trắc nghiệm có giải thích</h3>
+            <p>Mỗi câu hỏi đi kèm đáp án và lời giải chi tiết để bạn hiểu quy tắc, không chỉ chọn đúng.</p>
+          </article>
+          <article class="card">
+            <span class="chip gold"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>
+            <h3>Sổ lỗi sai thông minh</h3>
+            <p>Lỗi được tự phân loại và nhắc ôn lại theo lịch ngắt quãng, đưa đúng câu trở lại khi bạn sắp quên.</p>
+          </article>
+          <article class="card">
+            <span class="chip gold"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
+            <h3>Đánh dấu &amp; lưu trang</h3>
+            <p>Ghim những chủ điểm cần nhớ vào sổ tay của bạn; ứng dụng tự lưu lại nội dung vừa mở.</p>
+          </article>
+          <article class="card">
+            <span class="chip"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></span>
+            <h3>Ngoại tuyến &amp; giao diện tối</h3>
+            <p>Tra cứu và luyện tập mọi lúc, kể cả khi không có mạng. Hỗ trợ cả giao diện sáng và tối.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screens showcase -->
+    <section class="section alt" id="man-hinh">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow" style="justify-content:center">Nhìn qua một vòng</p>
+          <h2>Thiết kế gọn gàng, dễ đọc.</h2>
+          <p class="section-intro">Từ trang chủ tra nhanh đến bài luyện tập — mọi màn hình đều rõ ràng và tập trung.</p>
+        </div>
+        <div class="screens">
+          <div class="screen"><figure><div class="frame"><img src="assets/screens/so-tay.webp" alt="Trang chủ sổ tay với ô tìm kiếm" width="620" height="1341" loading="lazy"></div><figcaption><b>Trang chủ</b><span>Tìm kiếm &amp; mở nhanh</span></figcaption></figure></div>
+          <div class="screen"><figure><div class="frame"><img src="assets/screens/tra-cuu.webp" alt="Mục lục các thì và thời gian được phân nhóm" width="620" height="1341" loading="lazy"></div><figcaption><b>Tra cứu</b><span>Mục lục theo nhóm</span></figcaption></figure></div>
+          <div class="screen"><figure><div class="frame"><img src="assets/screens/bai-hoc.webp" alt="Nội dung công thức và cách dùng của một chủ điểm" width="620" height="1341" loading="lazy"></div><figcaption><b>Nội dung</b><span>Công thức &amp; ví dụ</span></figcaption></figure></div>
+          <div class="screen"><figure><div class="frame"><img src="assets/screens/on-tap.webp" alt="Khu vực ôn tập và sổ lỗi sai" width="620" height="1341" loading="lazy"></div><figcaption><b>Ôn tập</b><span>Luyện tập &amp; lỗi sai</span></figcaption></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
     <section class="section">
-      <p class="eyebrow">Một ứng dụng, nhiều cách học</p>
-      <h2>Học, luyện và đọc trong cùng một nhịp.</h2>
-      <p class="section-intro">Nội dung được tổ chức rõ ràng để bạn có thể bắt đầu nhanh, theo dõi tiến độ và quay lại đúng vị trí đang học.</p>
-      <div class="grid">
-        <article class="card"><span class="mark">01</span><h3>Bài học có hệ thống</h3><p>Tìm kiếm chủ đề, lưu bài yêu thích và tiếp tục từ phần đã đọc gần nhất.</p></article>
-        <article class="card"><span class="mark">02</span><h3>Luyện tập có phản hồi</h3><p>Kiểm tra đáp án, đọc giải thích và làm lại các câu sai để ghi nhớ lâu hơn.</p></article>
-        <article class="card"><span class="mark">03</span><h3>Đọc Anh — Việt</h3><p>Luyện đọc với nội dung song ngữ, danh ngôn, từ vựng và phiên âm đi kèm.</p></article>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Cách hoạt động</p>
+          <h2>Ba bước để ngữ pháp thật sự &ldquo;dính&rdquo;.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="num">1</span>
+            <h3>Tra</h3>
+            <p>Mở chủ điểm cần dùng, xem công thức, cách dùng và ví dụ ngắn gọn.</p>
+          </div>
+          <div class="step">
+            <span class="num">2</span>
+            <h3>Lưu</h3>
+            <p>Đánh dấu trang quan trọng để mở lại thật nhanh trong sổ tay của bạn.</p>
+          </div>
+          <div class="step">
+            <span class="num">3</span>
+            <h3>Ôn</h3>
+            <p>Làm trắc nghiệm và để sổ lỗi sai nhắc bạn ôn lại đúng lúc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Riêng tư, gọn nhẹ, luôn sẵn sàng.</h2>
+          <p>Không quảng cáo, không tài khoản, không mua hàng trong ứng dụng. Toàn bộ tiến độ học chỉ được lưu trên thiết bị của bạn.</p>
+          <div class="actions">
+            <a class="button" href="support.html">Trung tâm hỗ trợ</a>
+            <a class="button secondary" href="privacy.html">Chính sách quyền riêng tư</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">© 2026 ViGrammar · <a href="support.html">Hỗ trợ</a> · <a href="privacy.html">Quyền riêng tư</a></footer>
 </body>
 </html>

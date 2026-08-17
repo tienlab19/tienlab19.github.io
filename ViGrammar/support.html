@@ -3,37 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Trung tâm hỗ trợ ứng dụng ViGrammar.">
-  <meta name="theme-color" content="#5147d9">
+  <meta name="description" content="Trung tâm hỗ trợ ứng dụng ViGrammar — sổ tay ngữ pháp tiếng Anh.">
+  <meta name="theme-color" content="#2f6f61">
   <title>Hỗ trợ — ViGrammar</title>
   <link rel="icon" href="assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Điều hướng chính">
       <a class="brand" href="./"><img src="assets/app-icon.png" alt=""><span>ViGrammar</span></a>
-      <div class="nav-links"><a href="support.html" aria-current="page">Hỗ trợ</a><a href="privacy.html">Quyền riêng tư</a></div>
+      <div class="nav-links">
+        <a href="./">Trang chủ</a>
+        <a href="support.html" aria-current="page">Hỗ trợ</a>
+        <a class="cta" href="privacy.html">Quyền riêng tư</a>
+      </div>
     </nav>
   </header>
-  <main class="document">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="./">Trang chủ</a><span class="sep">/</span>Hỗ trợ
+  </nav>
+
+  <div class="page-head">
     <p class="eyebrow">Trung tâm hỗ trợ</p>
     <h1>Chúng tôi có thể giúp gì?</h1>
-    <p class="updated">Thông tin hỗ trợ dành cho ViGrammar phiên bản 1.0.0.</p>
-    <section class="notice" aria-labelledby="contact-support-title">
-      <h2 id="contact-support-title">Liên hệ hỗ trợ / Contact Support</h2>
-      <p>Nếu bạn có câu hỏi, cần báo lỗi hoặc muốn đề xuất tính năng, vui lòng gửi email đến <a href="mailto:tientran99.bka@gmail.com?subject=ViGrammar%20Support">tientran99.bka@gmail.com</a>.</p>
-      <p>Vui lòng cung cấp phiên bản ViGrammar, phiên bản iOS, dòng thiết bị và mô tả vấn đề. Chúng tôi thường phản hồi trong vòng 2–3 ngày làm việc.</p>
-      <p lang="en">For support questions, bug reports, feedback, or feature requests, email us at <a href="mailto:tientran99.bka@gmail.com?subject=ViGrammar%20Support">tientran99.bka@gmail.com</a>. Please include your ViGrammar version, iOS version, device model, and a short description of the issue.</p>
-    </section>
+    <p class="updated">Thông tin hỗ trợ dành cho ViGrammar phiên bản 1.0.</p>
+  </div>
 
-    <section class="faq"><h2>ViGrammar có cần tài khoản không?</h2><p>Không. Bạn có thể mở ứng dụng và bắt đầu học ngay mà không cần đăng ký hoặc đăng nhập.</p></section>
-    <section class="faq"><h2>Tôi có thể học khi không có Internet không?</h2><p>Các bài ngữ pháp, bài tập cơ bản và nhiều nội dung đọc được lưu trong ứng dụng. Một số bộ bài tập trực tuyến cần Internet ở lần tải đầu tiên và sẽ được lưu tạm để sử dụng lại.</p></section>
-    <section class="faq"><h2>Tiến độ học tập được lưu ở đâu?</h2><p>Tiến độ, bài yêu thích và vị trí đang đọc được lưu cục bộ trên thiết bị. ViGrammar hiện không đồng bộ dữ liệu qua tài khoản.</p></section>
-    <section class="faq"><h2>Làm sao đặt lại dữ liệu?</h2><p>Bạn có thể xoá ứng dụng rồi cài đặt lại để xoá toàn bộ tiến độ lưu cục bộ. Hành động này không thể hoàn tác.</p></section>
-    <section class="faq"><h2>Thiết bị nào được hỗ trợ?</h2><p>Phiên bản iOS hiện tại yêu cầu iOS 15.0 trở lên và hoạt động trên iPhone, iPad tương thích.</p></section>
-    <section class="faq"><h2>Ứng dụng có quảng cáo hoặc mua hàng không?</h2><p>Không. ViGrammar phiên bản hiện tại không chứa quảng cáo và không có giao dịch mua trong ứng dụng.</p></section>
+  <main class="support-main">
+    <div class="contact-card">
+      <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+      <div>
+        <b>Cần báo lỗi hoặc góp ý?</b>
+        <span>Gửi email kèm phiên bản iOS, dòng thiết bị và mô tả ngắn vấn đề.</span>
+      </div>
+      <a class="button" href="mailto:tientran99.bka@gmail.com">Gửi email</a>
+    </div>
+
+    <div class="faq-grid">
+      <section class="faq"><h2>ViGrammar là ứng dụng gì?</h2><p>Sổ tay ngữ pháp tiếng Anh giúp bạn tra nhanh công thức, xem ví dụ, đánh dấu trang cần nhớ và luyện tập với trắc nghiệm có giải thích — phù hợp cho người học từ cơ bản đến nâng cao (CEFR A1–B2).</p></section>
+      <section class="faq"><h2>Có cần tài khoản để dùng không?</h2><p>Không. Bạn có thể mở ứng dụng và bắt đầu tra cứu, luyện tập ngay mà không cần đăng ký hoặc đăng nhập.</p></section>
+      <section class="faq"><h2>Tôi có thể dùng khi không có Internet không?</h2><p>Có. Mục lục ngữ pháp, nội dung chủ điểm, trắc nghiệm và sổ lỗi sai đều hoạt động ngoại tuyến. Nội dung được đóng gói sẵn cùng ứng dụng.</p></section>
+      <section class="faq"><h2>Sổ lỗi sai hoạt động thế nào?</h2><p>Khi bạn trả lời sai, ViGrammar phân loại lỗi và ghi vào sổ lỗi sai, rồi đưa câu hỏi đó trở lại theo lịch ôn ngắt quãng để giúp bạn ghi nhớ lâu hơn.</p></section>
+      <section class="faq"><h2>Làm sao lưu một chủ điểm để xem lại?</h2><p>Chạm biểu tượng dấu trang khi đang tra cứu để lưu chủ điểm. Các trang đã lưu nằm trong tab <strong>Đã lưu</strong>.</p></section>
+      <section class="faq"><h2>Tiến độ học tập được lưu ở đâu?</h2><p>Điểm thành thạo, câu trả lời, chủ điểm đã lưu, lỗi sai và lịch ôn được lưu cục bộ trên thiết bị. ViGrammar không đồng bộ dữ liệu qua tài khoản.</p></section>
+      <section class="faq"><h2>Bài đánh giá trình độ có bắt buộc không?</h2><p>Không. Đây là bước tùy chọn để cá nhân hóa gợi ý ôn tập. Bạn có thể làm hoặc làm lại bất cứ lúc nào trong tab <strong>Đã lưu</strong>, và vẫn tra cứu bình thường nếu bỏ qua.</p></section>
+      <section class="faq"><h2>Làm sao đặt lại dữ liệu học?</h2><p>Bạn có thể làm lại bài đánh giá trình độ trong tab <strong>Đã lưu</strong>. Để xoá toàn bộ tiến độ trên máy, hãy gỡ và cài lại ứng dụng — thao tác này không thể hoàn tác.</p></section>
+      <section class="faq"><h2>Bật/tắt giao diện tối ở đâu?</h2><p>Mở tab <strong>Đã lưu</strong> và bật công tắc “Chế độ tối”. Ứng dụng hỗ trợ cả giao diện sáng và tối.</p></section>
+      <section class="faq"><h2>Thiết bị nào được hỗ trợ?</h2><p>Phiên bản iOS hiện tại yêu cầu iOS 15.0 trở lên và hoạt động trên iPhone, iPad tương thích.</p></section>
+      <section class="faq"><h2>Ứng dụng có quảng cáo hoặc mua hàng không?</h2><p>Không. ViGrammar không chứa quảng cáo và không có giao dịch mua trong ứng dụng.</p></section>
+    </div>
   </main>
+
   <footer class="footer">© 2026 ViGrammar · <a href="./">Trang chủ</a> · <a href="privacy.html">Quyền riêng tư</a></footer>
 </body>
 </html>
