@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  --ink: #122e26;
+  --paper: #f5f5ed;
+  --white: #fffef8;
+  --lime: #e3f78a;
+  --muted: #4d6257;
+  --line: #d8e0d5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #255a42; text-underline-offset: .18em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+header, main, footer { width: min(1060px, calc(100% - 2rem)); margin-inline: auto; }
+header, footer, nav { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+header, footer { justify-content: space-between; padding-block: 1.1rem; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; font-weight: 750; color: inherit; text-decoration: none; }
+.brand img { width: 42px; height: 42px; border-radius: 12px; }
+nav a[aria-current] { font-weight: 750; }
+h1, h2 { line-height: 1.15; text-wrap: balance; }
+h1 { margin: 0 0 .7rem; font-size: clamp(2.2rem, 6vw, 4.6rem); letter-spacing: -.055em; }
+h2 { margin: 0 0 .45rem; }
+p { margin: 0 0 1rem; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1.5rem, 6vw, 5rem);
+  border-radius: 28px;
+  padding: clamp(1.5rem, 6vw, 4.25rem);
+  background: var(--ink);
+  color: var(--white);
+}
+.hero h1 { color: var(--lime); }
+.hero p { max-width: 42ch; }
+.hero img { width: min(245px, 100%); height: auto; border-radius: 18px; display: block; }
+.button {
+  display: inline-block;
+  padding: .68rem 1.1rem;
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--lime);
+  font-weight: 750;
+  text-decoration: none;
+}
+.button:hover { background: #f0fcae; }
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: .9rem;
+  margin-block: 1rem;
+}
+.features article, .reading {
+  padding: clamp(1rem, 4vw, 2rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.reading { max-width: 760px; }
+.reading h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+.reading h2 { margin-top: 1.6rem; font-size: 1.3rem; }
+.reading a { overflow-wrap: anywhere; }
+.muted, footer { color: var(--muted); }
+footer { margin-top: 1.4rem; border-top: 1px solid var(--line); font-size: .9rem; }
+@media (max-width: 650px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero img { justify-self: center; }
+}
